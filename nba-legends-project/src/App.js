@@ -1,7 +1,10 @@
+import CardContainer from "./components/CardContainer"
+import PlayerCard from "./components/PlayerCard"
+
 function App() {
   return (
     <div>
-      <h1>React App</h1>
+      <CardContainer/>
     </div>
   )
 }

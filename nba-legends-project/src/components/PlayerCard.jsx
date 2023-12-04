@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PlayerCard = () => {
+const PlayerCard = ({img,name,istatistics}) => {
   return (
     <div>PlayerCard</div>
   )
