@@ -26,7 +26,7 @@ const CardContainer = () => {
             key={name}
             name={name}
             img={img}
-            istatistics={statistics}
+            statistics={statistics}
             />
         ))}
         </div>
