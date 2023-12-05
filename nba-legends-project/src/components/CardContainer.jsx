@@ -7,20 +7,29 @@ const CardContainer = () => {
     const handleChange=(e)=>{
         setValue(e.target.value)
     }
+    const filteredFunc = (player) =>{
+        const inputValue= value.trim().replace(/[^a-z]/gi,"").toLowerCase()
+        if(player.name.toLowerCase().includes(inputValue)){
+            return player
+        }
+    }
   return (
-    <div>
+    <div className='container'>
         <div>
             <input type="search" 
             onChange={handleChange}
             />
         </div>
-        {data.map(({name,img,istatistics})=>(
+        <div>
+        {data.filter(filteredFunc).map(({name,img,statistics})=>(
             <PlayerCard
-            img={img}
             key={name}
-            istatistics={istatistics}
+            name={name}
+            img={img}
+            istatistics={statistics}
             />
         ))}
+        </div>
     </div>
   )
 }
