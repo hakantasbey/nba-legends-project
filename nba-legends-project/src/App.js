@@ -1,14 +1,14 @@
-import CardContainer from "./components/CardContainer"
-import Header from "./components/Header"
-import PlayerCard from "./components/PlayerCard"
+import CardContainer from "./components/CardContainer";
+import Header from "./components/Header";
+import "./App.css";
 
 function App() {
   return (
     <div>
-      <Header/>
-      <CardContainer/>
+      <Header />
+      <CardContainer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
